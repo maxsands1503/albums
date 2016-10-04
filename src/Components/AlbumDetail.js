@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
-
+import Button from './Button';
 //We setup the prop being passed into this compnent in the AlbumList component
 //{this will grab our prop "album" and then accesses the title key's value}
 
@@ -27,6 +27,9 @@ const AlbumDetail = ({ album }) => {
         style={styles.imageStyle}
         source={{ uri: image }}
         />
+      </CardSection>
+      <CardSection>
+        <Button />
       </CardSection>
     </Card>
   );
